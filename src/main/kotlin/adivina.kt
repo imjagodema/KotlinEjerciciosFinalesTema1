@@ -17,14 +17,17 @@ while (minumero!=aleatorio)
 }
 fun leernum(): Int{
     var leido:String?
+
 do {
     leido= readLine()
 
 
     leido?.let { leido ->
         try {
+
             return leido.toInt()}catch (e: NumberFormatException){
-                println("El texto no es un numero")
+
+                println("El texto no es un numero o no esta en el rango comprendido")
             }
         }
 }while (true)
