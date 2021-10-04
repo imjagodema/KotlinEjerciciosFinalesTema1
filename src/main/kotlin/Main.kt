@@ -21,3 +21,13 @@ fun calcularPrecio2 (edad : Int, nombre : String): String {
 
     }
 }
+
+fun calcularPrecio3 (edad : Int, nombre : String): String {
+    when (edad){
+        0 -> return "$nombre, no has puesto una edad válida"
+        in 1..17 -> return "$nombre, debes abonar 5€"
+        in (18..65) -> return "$nombre, debes abonar 10€"
+        else -> return "$nombre, para ti es gratis"
+
+    }
+}
